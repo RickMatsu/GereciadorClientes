@@ -39,9 +39,15 @@
                         @foreach($usuarios as $usuario)
                             <tr>
                                 <td>{{ $usuario->id }}</td>
-                                <td>{{ $usuario->nome }}</td>
+                                <td>{{ $usuario->name }}</td>
                                 <td>{{ $usuario->email }}</td>
-                                <td>{{ $usuario->statusCliente->status_nome }}</td>
+                                <td>
+                                    @if($usuario->is_online == 1)
+                                        <i class="bi bi-toggle-on" style="color: green;"></i> <!-- Online -->
+                                    @else
+                                        <i class="bi bi-toggle-off" style="color: red;"></i> <!-- Offline -->
+                                    @endif
+                                </td>
                             </tr>
                         @endforeach
                     </tbody>
