@@ -56,7 +56,7 @@ class ClienteController extends Controller
             'data_nascimento' => $validatedData['data_nascimento'],
             'data_recebimento' => $validatedData['data_recebimento'],
             'nome_empresa' => $validatedData['nome_empresa'] ?? null,
-            'numero_vidas' => $validatedData['nuemro_vidas'] ?? null,
+            'numero_vidas' => $validatedData['numero_vidas'] ?? null,
             'valor' => $validatedData['valor'],
             'numero_proposta' => $validatedData['numero_proposta'] ?? null,
             'observacao' => $validatedData['observacao'] ?? null,
@@ -72,7 +72,9 @@ class ClienteController extends Controller
 
     public function edit(Cliente $cliente)
     {
-        return view('clientes.edit', compact('cliente')); // Formulário de edição
+        $operadoras = Operadora::all();
+        $status = StatusCliente::all();
+        return view('clientes.edit', compact('cliente', 'operadoras', 'status')); // Formulário de edição
     }
 
     public function update(Request $request, Cliente $cliente)
