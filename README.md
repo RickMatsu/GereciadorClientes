@@ -273,6 +273,3 @@ Nenhum arquivo de licença foi encontrado. Considere adicionar um `LICENSE` (por
 
 ---
 
-## 📬 Suporte
-
-Encontrou um problema? Abra uma *issue* no GitHub com passos para reproduzir, mensagem de erro e prints quando possível.
