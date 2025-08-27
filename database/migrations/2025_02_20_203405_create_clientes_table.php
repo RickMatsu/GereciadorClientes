@@ -26,11 +26,11 @@ return new class extends Migration
             $table->integer('numero_proposta')->nullable();
             $table->text('observacao')->nullable();
             $table->timestamps();
-            $table->foreign('operadora')->references('id')->on('operadoras')->onDelete('set null');
-            $table->foreign('status')->references('id')->on('status_cliente')->onDelete('set null');
+            $table->foreign('operadora_id')->references('id')->on('operadoras')->onDelete('set null');
+            $table->foreign('status_id')->references('id')->on('status_cliente')->onDelete('set null');
             $table->index('cpf');
             $table->index('cnpj');
-            $table->index('numero_proposta');
+            $table->integer('numero_vidas');
         });
     }
 
