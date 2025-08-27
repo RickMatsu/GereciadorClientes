@@ -250,26 +250,3 @@ php artisan tinker
 
 ---
 
-## 📃 Licença
-
-Nenhum arquivo de licença foi encontrado. Considere adicionar um `LICENSE` (por exemplo, **MIT**) para deixar os termos claros para colaboradores/usuários.
-
----
-
-## 🤝 Contribuindo
-
-* Abra *issues* e *pull requests* com descrições claras.
-* Padronize mensagens de commit e siga o estilo de código do Laravel/PSR-12.
-
----
-
-## 📌 Roadmap (sugestões)
-
-* Seeders para **Operadoras** e **Status**.
-* Testes automatizados (Feature/Unit) para o fluxo de clientes.
-* Upload de documentos do cliente (armazenamento em `storage/app/public`).
-* Filtro/Busca na listagem de clientes.
-* Autenticação/Autorização (se necessário).
-
----
-
